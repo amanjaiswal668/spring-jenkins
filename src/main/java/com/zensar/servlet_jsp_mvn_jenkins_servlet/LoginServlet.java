@@ -45,6 +45,7 @@ public class LoginServlet extends HttpServlet {
 		if (user.equals("Tim") && password.equals("Tim@123")) {
 
 			response.getWriter().print("<h2>Valid User!!!</h2>");
+			response.getWriter().print("<h2>Triggering automatic build in jenkins!!!</h2>");
 		} else {
 			response.getWriter().print("<h2>InValid User!!!</h2>");
 		}
